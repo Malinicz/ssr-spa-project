@@ -9,4 +9,5 @@ version: 0.1
 #       - tsc index.ts
 artifacts:
   files:
-    - ./client/index.js
+    - index.js
+  base-directory: client
