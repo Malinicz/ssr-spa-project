@@ -1,0 +1,6 @@
+version: 0.1
+
+artifacts:
+  files:
+    - index.html
+  base-directory: src
