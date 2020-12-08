@@ -3,4 +3,4 @@ version: 0.1
 artifacts:
   files:
     - index.js
-  base-directory: src
+  base-directory: spa/src
