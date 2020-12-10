@@ -1,6 +1,19 @@
 version: 0.1
 
+phases:
+  install:
+    commands:
+      - echo Installing dependencies...
+      - yarn install
+  build:
+    commands:
+      - echo Building SPA...
+      - yarn build:spa
+  post_build:
+    commands:
+      - echo Build completed on `date`
+
 artifacts:
   files:
-    - index.js
-  base-directory: spa/src
+    - bundle.js
+  base-directory: spa/dist

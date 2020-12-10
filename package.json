@@ -2,11 +2,18 @@
   "name": "ssr-spa-project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "echo \"Error: no build command specified\" && exit 1"
+    "build:spa": "webpack --config webpack-spa.config.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.10.0",
+    "webpack-cli": "^4.2.0"
+  }
 }

@@ -1,1 +1,1 @@
-console.log('Welcome to SPA!')
+alert('Welcome to SPA!');
