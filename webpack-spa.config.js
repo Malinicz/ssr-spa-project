@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './spa/src/index.js',
@@ -17,7 +18,11 @@ module.exports = {
             presets: ['@babel/preset-env']
           }
         }
-      }
+      },
     ]
-  }
+  },
+  plugins: [new HtmlWebpackPlugin({
+    template: '/spa/public/index.ejs',
+    filename: 'index.html'
+  })]
 };
