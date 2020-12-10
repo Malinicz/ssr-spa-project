@@ -16,4 +16,5 @@ phases:
 artifacts:
   files:
     - bundle.js
+    - index.html
   base-directory: spa/dist
