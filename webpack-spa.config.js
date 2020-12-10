@@ -22,7 +22,8 @@ module.exports = {
     ]
   },
   plugins: [new HtmlWebpackPlugin({
-    template: '/spa/public/index.ejs',
-    filename: 'index.html'
+    template: '/spa/public/index.html',
+    filename: 'index.html',
+    inject: false
   })]
 };
